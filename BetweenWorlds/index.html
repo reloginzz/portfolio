@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="portfólio de relogin. eu faço jogos, músicas e escrevo.">
+		<meta name="author" content="relogin">
+		<meta name="robots" content="index, follow">
+		<meta name="keywords" content="jogo, jogos, game dev, relogin, portfólio, pixel art, indie, storytelling, narrativa, game, games">
+
+		<title>relogin.exe</title>
+
+		<link rel="icon" href="../favicon.png" type="image/png">
+
+		<link rel="stylesheet" href="../style.css">
+	</head>
+	<body id="bodu">
+		<div class="walter"></div>
+		<div id="window" class="wnf" style="position:absolute;width:80vw;min-height:20vh;background-color:#c0c0c0;transform:translate(-50%,0);left:50vw;top:20vh;">
+			<div style="display:flex;background-color:#0000c8;width:100%;height:50px;align-items:center;"><p style="position:relative;font-size:150%;color:white;left:12px;user-select:none;">relogin.exe</p></div>
+
+			<div style="background-color:black;mask-image:linear-gradient(to bottom, white 10%, transparent 90%);overflow:hidden;">
+				<img src="../image327.png" style="height:200px;position:relative;transform:translate(-50%,0);left:50%;aspect-ratio: 5/1;background-color:black;"><br>
+			</div>
+
+			<h1 class="wm">Between Worlds</h1>
+
+			<p class="wmts">
+				&nbsp;Between Worlds é um jogo de ação psicológica 2D, inspirado por títulos como Hotline Miami, ULTRAKILL, UNDERTALE e Yume Nikki.<br>
+				&nbsp;Com uma narrativa profunda e brutalmente honesta, o jogo mergulha nas camadas da mente do protagonista, Bruno, enquanto ele atravessa um multiverso desmoronando para enfrentar não apenas monstros, mas a si mesmo.<br>
+
+				&nbsp;Bruno é um jovem que vivia uma rotina heroica ao lado de seus amigos, enfrentando ameaças dimensionais e protegendo mundos inteiros. Mas tudo muda quando Maria Clara, sua companheira de equipe e pessoa mais importante em sua vida, decide deixá-los. Sem ela, algo se quebra dentro de Bruno.<br>
+				&nbsp;A partir desse ponto, a jornada que antes era sobre salvar mundos se transforma em um caminho de introspecção, obsessão e conflito interno. A missão se mantém: impedir uma entidade que corrompe a realidade e devora universos. Mas o verdadeiro inimigo se esconde dentro do protagonista.<br>
+
+				&nbsp;O gameplay mistura combate frenético estilo twin stick shooter com uma variedade de ataques como tiros hitscan, projéteis, explosões em área e habilidades especiais. A influência de ULTRAKILL aparece na ideia de uma "moeda" arremessada que pode ser usada de forma criativa para combos e interações de combate técnicas.<br>
+				&nbsp;Cada fase é ambientada em um universo alternativo, com visuais que lembram paisagens espaciais vastas e deslumbrantes, refletindo tanto a beleza quanto a solidão do cosmos. Os inimigos, ambientes e desafios também representam aspectos do estado emocional de Bruno: medo, culpa, ansiedade, obsessão e, mais adiante, resignação ou esperança.<br>
+
+				&nbsp;A narrativa é dividida em quatro grandes atos: o primeiro mostra Bruno ainda com Maria Clara, onde o jogador sente a desconexão crescente entre os dois. O segundo é a queda lenta na obsessão, com alucinações, falhas de combate e visões distorcidas. O terceiro é totalmente onírico: Bruno entra em coma e o jogo se transforma em uma experiência surreal, onde gameplay e realidade se misturam. O quarto é a conclusão: ele acorda e precisa decidir entre desistir ou seguir lutando, mesmo sem garantias.<br>
+
+				&nbsp;O diferencial de Between Worlds é como ele trata temas como solidão e obsessão de forma crua, mas simbólica. Ele não oferece respostas fáceis, e espera que o jogador participe emocionalmente da jornada de Bruno. As mecânicas de combate podem falhar propositalmente em certos momentos, refletindo a instabilidade mental do protagonista. Sons desaparecem, controles travam, ilusões tomam conta da tela - tudo para fazer você se perguntar o que é real.<br>
+
+				&nbsp;O jogo contará com dois finais principais: um de desistência, em que Bruno sucumbe ao peso de seus sentimentos, e outro de perseverança, em que ele aprende a aceitar a dor e seguir em frente, mesmo que com perdas irreparáveis. Nenhum final é 100% feliz, mas cada um revela uma faceta do crescimento pessoal - ou da falta dele.<br>
+
+
+				&nbsp;Atualmente em estágio inicial de desenvolvimento com a engine GameMaker Studio 2, Between Worlds é um projeto ambicioso que busca impactar o jogador não apenas com gameplay afiado, mas com reflexões emocionais profundas. Ainda não há uma demo ou data de lançamento, mas a base está sendo construída com foco, intenção e paixão.<br>
+
+				&nbsp;Entre mundos e memórias, entre dor e renascimento - essa é a história de Bruno.<br>
+				&nbsp;<br>
+			</p>
+
+		</div>
+		
+		<button style="position:fixed;all: unset;margin: 0;padding: 0;box-sizing: border-box;cursor:pointer;" onclick="location.href='../index.html'"><img class="hpb" src="../favicon.png" style="position:fixed;width:100px;height:100px;top:0;"></button>
+		
+		<p class="wmts" style="position:fixed;width:100vw;color:white;text-align:center;transform:translate(0,-100%);top:95vh;mix-blend-mode:difference;">Site licenciado sob <a style="color: white;" href="https://unlicense.org">unlicense.org</a></p>
+
+		<script>
+			const el = document.getElementById("window");
+			const glow = document.getElementById("bodu");
+			
+			if (el && glow) {
+				const bSize = el.offsetHeight; // altura do #window em px
+	
+				const altura = bSize + 12 + 20 * window.innerHeight / 100;
+				glow.style.height = altura + "px";
+			}
+
+			
+			el.style.animation = "appear2 2s ease-in-out forwards";
+			
+			el.addEventListener("animationend", () => {
+				el.style.animation = "floatDown2 4s ease-in-out infinite alternate";
+			});
+		</script>
+	</body>
+</html>
