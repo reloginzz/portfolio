@@ -1,0 +1,112 @@
+html {
+	scroll-behavior: smooth;
+}
+
+.walter {
+	width: 100vw;
+	height: 100vh;
+	background: linear-gradient(to right, hsl(300, 100%, 12%), hsl(240, 100%, 12%));
+	position: fixed;
+}
+
+button {
+	border: none;
+	background-color: #c0c0c0;
+	cursor:pointer;
+	box-shadow:3px 3px #787878, 0 3px #787878, 3px 0 #787878, 0 -3px #dedede,3px -3px #787878, -3px 3px #dedede,-3px -3px #dedede, -3px 0 #dedede,-6px 3px white,-6px -6px white,3px -6px white,6px 6px black,6px 0 black,6px -6px black,-6px 6px black;
+}
+
+button:active {
+	box-shadow:3px 3px #dedede, 0 3px #dedede, 3px 0 #dedede, 0 -3px #787878,3px -3px #dedede, -3px 3px #787878,-3px -3px #787878, -3px 0 #787878,-6px 3px black,-6px -6px black,3px -6px black,6px 6px white,6px 0 white,6px -6px white,-6px 6px white;
+}
+
+.hpb {
+	opacity: 0.5;
+}
+
+.hpb:hover {
+	opacity: 1;
+}
+
+.wm { /*withmargin*/
+	margin: 8px;
+	padding: 0;
+}
+
+.wmts {
+	margin: 8px;
+	padding: 0;
+	font-size: 150%;
+}
+
+@font-face {
+	font-family: 'W95FA';
+	src: url('fonts/W95FA.otf') format('opentype');
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'W95FA';
+}
+
+.fd {position:absolute;width:calc(80vh - 12px);aspect-ratio:100/107;background-color:#c0c0c0;transform:translate(-50%,0%);left:50vw;top:calc(10vh - 6px);max-width:80vw;}
+.wnf {box-shadow:3px 3px #787878,-3px -3px #787878,3px -3px #787878,-3px 3px #787878,-6px 3px white,-6px -6px white,3px -6px white,6px 6px black,6px 0 black,6px -6px black,-6px 6px black;}
+.wnf2 {box-shadow:3px 3px #787878, 0 3px #787878, 3px 0 #787878, 0 -3px #dedede,3px -3px #787878, -3px 3px #dedede,-3px -3px #dedede, -3px 0 #dedede,-6px 3px white,-6px -6px white,3px -6px white,6px 6px black,6px 0 black,6px -6px black,-6px 6px black;}
+.wnf3 {box-shadow:3px 3px #dedede, 0 3px #dedede, 3px 0 #dedede, 0 -3px #787878,3px -3px #dedede, -3px 3px #787878,-3px -3px #787878, -3px 0 #787878,-6px 3px white,-6px -6px white,3px -6px white,6px 6px black,6px 0 black,6px -6px black,-6px 6px black;}
+
+@keyframes floatDown {
+	0% {
+		top: calc(10vh + 6px); /* Começa fora da tela */
+	}
+	100% {
+		top: calc(15vh + 6px); /* Vai até essa posição */
+	}
+}
+
+@keyframes appear {
+	0% {
+		top: calc(60vh + 6px);
+		opacity: 0;
+	}
+	100% {
+		top: calc(10vh + 6px);
+		opacity: 1;
+	}
+}
+
+@keyframes floatDown2 {
+	0% {
+		top: 10vh; /* Começa fora da tela */
+	}
+	100% {
+		top: 15vh; /* Vai até essa posição */
+	}
+}
+
+@keyframes appear2 {
+	0% {
+		top: 60vh;
+		opacity: 0;
+	}
+	100% {
+		top: 10vh;
+		opacity: 1;
+	}
+}
+
+.wave-text span {
+	display: inline-block;
+	animation: wave 2s ease-in-out infinite;
+	animation-delay: calc(0.2s * var(--i));
+}
+
+@keyframes wave {
+	0%, 100% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-10px);
+	}
+}

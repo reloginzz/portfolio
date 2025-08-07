@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="portfólio de relogin. eu faço jogos, músicas e escrevo.">
+		<meta name="author" content="relogin">
+		<meta name="robots" content="index, follow">
+		<meta name="keywords" content="jogo, jogos, game dev, relogin, portfólio, pixel art, indie, storytelling, narrativa, game, games">
+
+		<title>relogin.exe</title>
+
+		<link rel="icon" href="favicon.png" type="image/png">
+
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body id="bodu">
+		<div class="walter"></div>
+		<div id="window" class="fd wnf">
+			<div style="display:flex;background-color:#0000c8;width:100%;height:50px;align-items:center;"><p style="position:relative;font-size:150%;color:white;left:12px;user-select:none;">relogin.exe</p></div>
+			
+			
+			<h1 class="wm">&nbsp;Game Dev e Escritor</h1>
+			
+			<p class="wmts">
+				&nbsp;Opa, eu sou o relogin e sou um game dev&nbsp;<span class="wave-text">
+					<span style="--i:0; color: green;">b</span>
+					<span style="--i:1; color: green;">r</span>
+					<span style="--i:2; color: yellow;">a</span>
+					<span style="--i:3; color: yellow;">s</span>
+					<span style="--i:4; color: blue;">i</span>
+					<span style="--i:5; color: blue;">l</span>
+					<span style="--i:6; color: yellow;">e</span>
+					<span style="--i:7; color: yellow;">i</span>
+					<span style="--i:8; color: green;">r</span>
+					<span style="--i:9; color: green;">o</span>
+					</span>. <br>
+				&nbsp;Minha paixão é criar mundos vivos com personagens empáticos.<br>
+				&nbsp;Minhas grandes inspirações são UNDERTALE, OneShot, ULTRAKILL e Hotline Miami.<br>
+				&nbsp;Programo no GameMaker Studio 2, Godot e Pygame.<br>
+				&nbsp;Aí embaixo tem algumas páginas interessantes de se visitar.<br>
+				<br>
+				<button class="wmts" onclick="location.href='Sobre/index.html'"><p clas="wm"><p class="wm">Sobre Mim</p></button><br>
+				<br>
+				<button class="wmts" onclick="location.href='WIPProjects/index.html'"><p class="wm">Projetos em desenvolvimento</p></button><br>
+				<br>
+				<button class="wmts" onclick="location.href='FinishedProjects/index.html'"><p class="wm">Projetos finalizados</p></button>
+				<br>&nbsp;
+			</p>
+		</div>
+		
+		<button style="position:fixed;all: unset;margin: 0;padding: 0;box-sizing: border-box;cursor:pointer;" onclick="location.href='index.html'"><img class="hpb" src="favicon.png" style="position:fixed;width:100px;height:100px;top:0;user-select:none;"></button>
+		
+		<p class="wmts" style="position:fixed;width:100vw;color:white;text-align:center;transform:translate(0,-100%);top:95vh;mix-blend-mode:difference;">Site licenciado sob <a style="color: white;" href="https://unlicense.org">unlicense.org</a></p>
+		<script>
+			const el = document.getElementById("window");
+			const glow = document.getElementById("bodu");
+			
+			if (el && glow) {
+				const bSize = el.offsetHeight; // altura do #window em px
+	
+				const altura = bSize + 12 + 20 * window.innerHeight / 100;
+				glow.style.height = altura + "px";
+			}
+
+			
+			el.style.animation = "appear 2s ease-in-out forwards";
+			
+			el.addEventListener("animationend", () => {
+				el.style.animation = "floatDown 4s ease-in-out infinite alternate";
+			});
+		</script>
+	</body>
+</html>
