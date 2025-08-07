@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="portfólio de relogin. eu faço jogos, músicas e escrevo.">
+		<meta name="author" content="relogin">
+		<meta name="robots" content="index, follow">
+		<meta name="keywords" content="jogo, jogos, game dev, relogin, portfólio, pixel art, indie, storytelling, narrativa, game, games">
+
+		<title>relogin.exe</title>
+
+		<link rel="icon" href="../favicon.png" type="image/png">
+
+		<link rel="stylesheet" href="../style.css">
+	</head>
+	<body id="bodu">
+		<div class="walter"></div>
+		<div id="window" class="wnf" style="position:absolute;width:80vw;min-height:20vh;background-color:#c0c0c0;transform:translate(-50%,0);left:50vw;top:20vh;">
+			<div style="display:flex;background-color:#0000c8;width:100%;height:50px;align-items:center;"><p style="position:relative;font-size:150%;color:white;left:12px;user-select:none;">relogin.exe</p></div>
+
+			<div style="background-color:black;mask-image:linear-gradient(to bottom, white 10%, transparent 90%);overflow:hidden;">
+				<img src="../image327.png" style="height:200px;position:relative;transform:translate(-50%,0);left:50%;aspect-ratio: 5/1;background-color:black;"><br>
+			</div>
+			<button class="wmts"style="margin: 16px 16px;"><p class="wm" onclick="location.href='../BetweenWorlds/index.html'">Página Completa</p></button>
+
+			<p class="wmts">
+				&nbsp;<strong>Between Worlds</strong> é um jogo de ação inspirado em <i>Hotline Miami, ULTRAKILL, UNDERTALE e Yume Nikki.</i> Nele, você acompanha Bruno numa jornada por universos alternativos enquanto ele enfrenta seus próprios demônios - obsessão, culpa e solidão.<br>
+				&nbsp;Com uma narrativa imersiva e mecânicas que refletem o estado mental do protagonista, o jogo desafia o jogador a tomar decisões difíceis que moldam o destino de Bruno e do multiverso.<br>
+				
+				&nbsp;<br>
+			</p>
+		</div>
+		
+		<button style="position:fixed;all: unset;margin: 0;padding: 0;box-sizing: border-box;cursor:pointer;" onclick="location.href='../index.html'"><img class="hpb" src="../favicon.png" style="position:fixed;width:100px;height:100px;top:0;"></button>
+		
+		<p class="wmts" style="position:fixed;width:100vw;color:white;text-align:center;transform:translate(0,-100%);top:95vh;mix-blend-mode:difference;">Site licenciado sob <a style="color: white;" href="https://unlicense.org">unlicense.org</a></p>
+
+		<script>
+			const el = document.getElementById("window");
+			const glow = document.getElementById("bodu");
+			
+			if (el && glow) {
+				const bSize = el.offsetHeight; // altura do #window em px
+	
+				const altura = bSize + 12 + 20 * window.innerHeight / 100;
+				glow.style.height = altura + "px";
+			}
+
+			
+			el.style.animation = "appear2 2s ease-in-out forwards";
+			
+			el.addEventListener("animationend", () => {
+				el.style.animation = "floatDown2 4s ease-in-out infinite alternate";
+			});
+		</script>
+	</body>
+</html>
